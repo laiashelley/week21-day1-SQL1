@@ -1,0 +1,21 @@
+-- Crea al menos 5 registros y prueba a realizar diferentes tipos de consultas con las instrucciones vistas en clase: SELECT, WHERE, ORDER BY, y DESC, >, <, =. Cómo usas LIKE con % y _ para encontrar un elemento determinado? 
+
+-- Cómo seleccionas los datos de un id dado? 
+
+SELECT * FROM `vinilos` 
+WHERE id = 5 ;
+
+-- Como muestras una columna específica? 
+
+SELECT titulo FROM `vinilos` 
+WHERE id < 3;
+
+-- Cómo encuentras algún elemento que contenga la letra 'm'? 
+
+SELECT cantanteGrupo FROM `vinilos` 
+WHERE cantanteGrupo LIKE '%m%';
+
+-- Cómo ordenas el resultado según su valor numérico? etc
+
+SELECT * FROM `vinilos`
+ORDER BY id DESC ;
